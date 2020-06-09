@@ -22,7 +22,7 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
 			<span class="Navbar-toggler-icon"></span>
 		</button>
-			<a class="navbar-brand mr-auto" href="#">Restorante Con Fusion</a>
+			<a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
 			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -41,8 +41,14 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm-3 align-self-center">
+					<img src="img/logo.png" class="img-fluid">
                 </div>
+				<div class="col-12 col-sm-3 align-self-center">
+					<div class="btn">
+					<a  role="button button2" class="btn btn-primary btn-sm" name="Reserve Table" href="#bottom">Reserve Table</a>
+					</div>
+				</div>
             </div>
         </div>
     </header>
@@ -53,8 +59,14 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+				<div class="media">
+				<img class="d-flex mr-3 img-thumbnail align-self-center"
+							src="img/uthappizza.png" alt="uthappizza">
+					<div class="media-body">
+						<h2 class="mt-0" >Uthappizza <span class="badge badge-danger">HOT</span><span class="ml-1 badge badge-pill badge-secondary">$4.99</span></h2>
+						<p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+					</div>
+				</div>
             </div>
         </div>
 
@@ -64,8 +76,16 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+				<div class="media">
+					<div class="media-body">
+						<h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+						<p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+					</div>
+					<div class="media-right">
+						<img class="d-flex mr-3 img-thumbnail align-self-center"
+							src="img/buffet.png" alt="buffet">
+					</div>
+				</div>
             </div>
         </div>
 
@@ -74,11 +94,53 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+				<div class="media">
+					<img class="d-flex mr-3 img-thumbnail align-self-center"
+						src="img/alberto.png" alt="alberto">
+					<div class="media-body">
+						<h2 class="mt-0">Alberto Somayya</h2>
+						<h4>Executive Chef</h4>
+						<p class="d-none d-sm-block" >Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+					</div>
+				</div>
             </div>
-        </div>
+        </div> 
+		<div class="row row-content align-items-center">
+			<div class="col-sm-8 col-xs-auto align-items-center">
+				<div class="card" id="bottom">
+					<h3 class="card-header bg-primary text-white ph-card-header">Reserve a Table</h3>
+					<div class="card-body" >
+						<form>
+						<div class="row ">
+						<div class="col-12 col-sm-2"><B>Number of Guests</B></div>
+						<div class="col-sm-10">
+						<input type="radio" name="1" value="1"> 1
+						<span class="ml-1"></span>
+						<input type="radio" name="2" value="2"> 2
+						<span class="ml-1"></span>
+						<input type="radio" name="3" value="1"> 3
+						<span class="ml-1"></span>
+						<input type="radio" name="4" value="2"> 4
+						<span class="ml-1"></span>
+						<input type="radio" name="5" value="1"> 5
+						<span class="ml-1"></span>
+						<input type="radio" name="6" value="2"> 6
+						</div>
+						</div >
+						<div class="row">
+						<div class="col-12 col-sm-2"><B>Date and Time</B></div>
+						<input type="date" placeholder="date" class="col-sm-4" >
+						<span class="ml-4"></span>
+						<input type="time" placeholder="time" class="col-sm-4">
+						</div>
+						<div class="col-auto">
+						<button  class="button1 name="Reserve"><B>Reserve</B></button> 
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <footer class="footer">

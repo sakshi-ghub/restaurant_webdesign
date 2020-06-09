@@ -29,9 +29,47 @@
 	color: #0f0f0f;
 }
 
+.button1{
+	border: none;
+	color: white;
+	padding:10px 25px;
+	text-align: center;
+	border-radius:8px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 40px 80px;
+	background-color: blue;
+}
+.ph-card-header{
+	color:white;
+	background-color:Red;
+}
+
+.container1{
+	padding-top:50px;
+}
+.button2{
+	border: none;
+	color: white;
+	padding:10px 25px;
+	text-align: center;
+	border-radius:8px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	background-color: blue;
+}
+
 .split{
 	height: 100%;
 	width: 50%;
+}
+
+.tab-content{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
 }
 
 @media (max-width: 575px) {                  
