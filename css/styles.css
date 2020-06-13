@@ -9,7 +9,10 @@
 	border-bottom: 1px ridge;
 	min-height: 400px;
 }
-
+.form-row{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 .footer{
 	background-color: #D1C4E9;
 	margin: 0px auto;
@@ -37,9 +40,52 @@
 	border-radius:8px;
 	text-decoration: none;
 	font-size: 16px;
-	margin: 40px 80px;
+	margin: 8px 8px;
 	background-color: blue;
 }
+
+.button3{
+	border: none;
+	color: white;
+	padding:10px 25px;
+	text-align: center;
+	border-radius:8px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 8px 8px;
+}
+
+.button4{
+	border: none;
+	color: white;
+	padding:8px 20px;
+	text-align: center;
+	border-radius:8px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 0px;
+	background-color: green;
+}
+.button5{
+	border: none;
+	color: white;
+	padding:8px 20px;
+	text-align: center;
+	border-radius:8px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 0px;
+	background: red;
+}
+
+.form-row{
+	color: black;
+}
+
+.modal-header{
+	color: black;
+}
+
 .ph-card-header{
 	color:white;
 	background-color:Red;
@@ -100,4 +146,10 @@
     top: 0;
     left: 0;
     min-height: 300px;
+}
+
+#carouselButton{
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
 }
