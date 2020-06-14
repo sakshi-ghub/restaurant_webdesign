@@ -30,9 +30,9 @@
 					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
 					<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 				</ul>
-				<span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+				<span class="navbar-text" id="login-btn">
+                    
+                    <a><span class="fa fa-sign-in active " ></span> Login</a>
                 </span>
 			</div>
 		</div>
@@ -43,8 +43,8 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color:white">Login </h4>
+                    <button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"  data-dismiss="modal" >Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
                     </form>
@@ -91,15 +91,15 @@
 						<!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">Reserve a Table </h4>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title" ><p style="color: white">Reserve a Table</p> </h4>
+								<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
 			
 								<form>
 									<div class="form-row ">
-										<div class="col-12 col-sm-2"><B>Number of Guests</B></div>
-										<div class="col-sm-10">
+										<div class="col-12 col-sm-2"><p style="color: black">Number of Guests</p></div>
+										<div class="col-sm-10" style="color:black">
 											<input type="radio" name="1" value="1"> 1
 											<span class="ml-1"></span>
 											<input type="radio" name="1" value="1"> 2
@@ -113,31 +113,32 @@
 											<input type="radio" name="1" value="1"> 6
 										</div>
 									</div >
+									
 									<div class="form-row ">
-										<div class="col-12 col-sm-2"><B>Section</B></div>
+										<div class="col-12 col-sm-2"><p style="color: black">Section</p></div>
 										<div class="col-sm-10">
 											<div class="btn-group btn-group-toggle" data-toggle="buttons">
-												<label class="btn btn-secondary-active button4">
+												<label class="btn btn-secondary-active" style="background:green">
 													<input type="radio" name="smoke" checked>Non-Smoking</B></button>   
 												</label>
 											
-												<label class="btn btn-secondary button5">
-													<input type="radio" name="smoke" checked>Smoking</B></button>   
+												<label class="btn btn-secondary button5" style="background:red">
+													<input type="radio" name="smoke" checked >Smoking</B></button>   
 												</label>
 											</div>
 										</div>
 									</div>
-									
+								
 									<div class="form-row">
-										<div class="col-12 col-sm-2"><B>Date and Time</B></div>
+										<div class="col-12 col-sm-2"><p style="color: black">Date and Time</p></div>
 										<input type="date" placeholder="date" class="col-sm-4" >
 										<span class="ml-4"></span>
 										<input type="time" placeholder="time" class="col-sm-4">
 									</div>
 									<div class="12 col-sm-5">
 									<div class="form-row">
-										<button type="button" class="btn btn-secondary btn-sm ml-auto button3" data-dismiss="modal"><B>Cancel</B></button>   
-										<button  class="button1 name="Reserve"><B>Reserve</B></button>										
+										<button type="button" class="btn btn-secondary btn-sm ml-auto button3 " data-dismiss="modal"><B>Cancel</B></button>   
+										<button  class="button1 name="Reserve" style="background:blue" ><B style="color:white">Reserve</B></button>										
 									</div>
 									</div>
 								</form>
@@ -148,9 +149,8 @@
 				</div>
 				
 				<div class="col-12 col-sm align-self-center">
-					<div class="btn">
-						<a  role="button button2" class="btn btn-block nav-link btn-warning"
-							data-toggle="modal" data-target="#loginModal2" >Reserve Table</a>
+					<div class="btn" id="reserve-btn">
+						<a  role="button button2" class="btn btn-block nav-link btn-warning"> Reserve Table</a>
 					</div>
 				</div>
             </div>
@@ -269,7 +269,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
@@ -323,6 +323,22 @@
             });
         });
     </script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#login-btn").click(function(){
+			$('#loginModal').modal();
+		});
+	});
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#reserve-btn").click(function(){
+			$('#loginModal2').modal();
+		});
+	});
+	</script>
 </body>
 
 </html>
